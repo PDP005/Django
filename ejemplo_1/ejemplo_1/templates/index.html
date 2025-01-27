@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>{{mensaje}} html {{nombre}}</p>
+    <p>{% if nombre %}hay nombre</p>
+    <p>{% else %} SOSOW</p>
+    {% endif %}
+    <!-- HAY FOR -->
+    <ul>
+      {% for item in l %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    <p>{% if edad %}</p>
+    {{edad}} {% endif %}
+    <!--http://127.0.0.1:8000/tuEdadFutura/8/-->
+  </body>
+</html>
