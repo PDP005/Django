@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    {% for item in l %}
+    <ul>
+      {{item.nombre}}
+    </ul>
+    {% endfor %}
+    <br />
+    <!-- HACERLO EN VIEWS
+    {% if l|length == 1 %} estás empezando {% endif %}
+    {% if l|length == 0 %} Espabila {% endif %}
+    {% if l|length == 2 %} estás empezando {% endif %}
+    -->
+    {{mensaje}}
+  </body>
+</html>
